@@ -1,0 +1,12 @@
+{
+   "author": "AlFalahTaieb",
+   "chrome_url_overrides": {
+      "newtab": "wedding.html"
+   },
+   "description": "Wedding Countdown",
+   "manifest_version": 2,
+   "name": "WeddCoun",
+   "offline_enabled": true,
+   "version": "1.0",
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
