@@ -59,10 +59,10 @@ div#avatar {
  <img src="https://i.redd.it/d3033rcpxgy31.png" alt="Weddingt" width="400" height="400"> 
 <h1>Choubidou & Choubidou Jr Countdown</h1> 
 <div id="clockdiv"> 
-  <div> 
+<!--   <div> 
     <span class="weeks" id="week"></span> 
     <div class="smalltext">Weeks</div> 
-  </div> 
+  </div>  -->
   <div> 
     <span class="days" id="day"></span> 
     <div class="smalltext">Days</div> 
@@ -93,7 +93,7 @@ let x = setInterval(function() {
 let now = new Date().getTime(); 
 let t = deadline - now; 
 let days = Math.floor(t / (1000 * 60 * 60 * 24)); 
-let weeks = Math.floor(days/7); 
+// let weeks = Math.floor(days/7); 
 let hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
 let minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
 let seconds = Math.floor((t % (1000 * 60)) / 1000); 
@@ -105,7 +105,7 @@ document.getElementById("second").innerHTML =seconds;
 if (t < 0) { 
         clearInterval(x); 
         document.getElementById("demo").innerHTML = "Wedding Countdown"; 
-        document.getElementById("week").innerHTML ='0';
+        // document.getElementById("week").innerHTML ='0';
         document.getElementById("day").innerHTML ='0'; 
         document.getElementById("hour").innerHTML ='0'; 
         document.getElementById("minute").innerHTML ='0' ;  
